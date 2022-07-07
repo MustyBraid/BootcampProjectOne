@@ -4,26 +4,42 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>JS quiz</title>
+    <title>Plain Doughnut</title>
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./assets/js/script.js"></script>
 </head>
 
 <header>
+    <input type="text" id="searchBar" placeholder="Search" />
     <nav>
-        <a>Github Project Link</a>
+        <a href="https://github.com/MustyBraid/BootcampProjectOne">Github Project Link</a>
     </nav>
-
 </header>
 
 <body>
+    <main>
+        <section class="card" id="wikipedia">
+            <p>This is a Wikipedia title, probably!</p>
+            <img src=".\assets\Wikipedia-logo-v2.svg.png" alt="Wikipedia Logo">
+            <!-- Not even sure this <a> element is necessary. I suspect it isn't -->
+            <a href="" id="wikipediaLink">This could be a Wikipedia link</a>
+        </section>
+        
+        <section class="card" id="misc">
+            <ul>
+                <li>A button or some info</li>
+                <li>Some more info here, this one is quite long just to show how the text wraps. Isn't technology incredible?</li>
+                <li>Another list item, just to help show how far apart these items are spaced. I will throw them into a flexbox column, I think</li>
+            </ul>
+            </section>
 
-    <section class="card" id="wikipedia"> </section>
-    
-    <section class="card" id="misc"> </section>
-
-    <section class="card" id="youtube"> </section>
+        <section class="card" id="youtube">
+            <p>This is a Youtube title, probably!</p>
+            <img src="./assets\hd-youtube-logo-png-transparent-background-20.png" alt="Youtube Logo">
+            <!-- Not even sure this <a> element is necessary. I suspect it isn't -->
+            <a href="" id="youtubeLink">This could be a Youtube link</a> 
+        </section>
+    </main>
 </body>
-
-<!-- I am just changing code to make a branch conflict/pull request/review request/whatever -->

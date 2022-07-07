@@ -1,0 +1,66 @@
+*{
+    background-color: black;
+}
+
+p, li {
+    color: rgba(255, 255, 255, 0.7);
+}
+input[type=text]{
+    display: inline;
+    background-color: rgba(0, 0, 264, 0.264);
+    border: 1px solid gray;
+    color: rgba(255, 255, 255, 0.7);
+}
+input[type=text]:focus{
+    background-color: rgba(0, 0, 264, 0.5);
+    border: white;
+    color: rgba(255, 255, 255, 1);
+}
+
+header{
+    display: block;
+    height: 8vh;
+    padding: 10px;
+    border-bottom: 10px solid;
+    border-color: rgba(0, 0, 264, 0.4);
+}
+
+header > nav{
+    position: absolute;
+    margin-left: 60vw;
+    display: inline;
+    text-align: right;
+}
+
+main {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.card {
+    border-style: solid;
+    border-color: rgba(0, 0, 264, 0.4);
+    border-radius: 20px;
+    padding: 10px;
+    border-width: 3px;
+    height: 85vh;
+    margin: 10px;
+}
+
+.card > img {
+    width: 35vw;
+    padding: 20px;
+    margin: 10px;
+}
+
+.card > p, .card > a {
+    text-align: center;
+}
+.card > ul {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    height: 80vh;
+}
