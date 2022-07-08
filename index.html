@@ -12,7 +12,20 @@
 </head>
 
 <header>
-    <input type="text" id="searchBar" placeholder="Search" />
+    <input type="text" id="searchBar" placeholder="Search"/>
+    <select id="formatInput">
+        <option value="" disabled selected>Select a format...</option>
+        <!-- TODO: These values are placeholders, will update later -->
+        <option value="maps">Maps</option>
+        <option value="audio">Audio</option>
+        <option value="photos">Photos</option>
+        <option value="manuscripts">Manuscripts</option>
+        <option value="newspapers">Newspapers</option>
+        <option value="film-and-videos">Film and Videos</option>
+        <option value="notated-music">Notated Music</option>
+        <option value="websites">Websites</option>
+    </select>
+    <button id="searchButton" type="button">Search</button>
     <nav>
         <a href="https://github.com/MustyBraid/BootcampProjectOne">Github Project Link</a>
     </nav>

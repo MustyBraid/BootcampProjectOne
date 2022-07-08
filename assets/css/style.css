@@ -5,18 +5,25 @@
 p, li {
     color: rgba(255, 255, 255, 0.7);
 }
+#formatInput {
+    background-color:rgba(0, 0, 264, 0.264) ;
+    color: white;
+}
 input[type=text]{
     display: inline;
     background-color: rgba(0, 0, 264, 0.264);
     border: 1px solid gray;
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 1);
 }
 input[type=text]:focus{
     background-color: rgba(0, 0, 264, 0.5);
-    border: white;
     color: rgba(255, 255, 255, 1);
 }
-
+button {
+    background-color: rgba(0, 0, 264, 0.5);
+    color: white;
+    border: 1px solid gray;
+}
 header{
     display: block;
     height: 8vh;
