@@ -34,7 +34,7 @@ header{
 
 header > nav{
     position: absolute;
-    margin-left: 60vw;
+    margin-left: 50vw;
     display: inline;
     text-align: right;
 }
@@ -54,12 +54,20 @@ main {
     border-width: 3px;
     height: 85vh;
     margin: 10px;
+    width: 40vw;
+}
+
+.card > * {
+    margin: 10px;
+    padding: 20px;
+}
+
+#misc {
+    width: 20vw;
 }
 
 .card > img {
-    width: 35vw;
-    padding: 20px;
-    margin: 10px;
+    width: 25vw;
 }
 
 .card > p, .card > a {
