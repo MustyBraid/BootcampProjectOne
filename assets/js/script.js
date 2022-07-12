@@ -47,3 +47,23 @@
 //     });
 //     $("body").append(element);
 //   });
+
+
+//Just some basic user-input storage to help with your generation stuff
+// $(document).ready(() => {
+//     $("#searchButton").click((event) => {
+//         let query = $('#searchBar').val();
+//         let format = $('#formatInput').val();
+//         //Now make this pass those values into your functions.
+//     console.log(format);
+//     console.log(typeof(format));
+//         //youtubeSearch(query, format)
+//         //wikipediaSearch(query,format)
+//     });
+
+
+//     //this is a basic setup of what will store our metadata in the middle of the screen
+//     function populateMiddle (youtubeTitle, wikiArticle, youtubeAnalytics, wikiAnalytics, youtubeLength, wikiLength){
+//         $
+//     }
+// });
