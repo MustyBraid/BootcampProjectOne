@@ -68,8 +68,10 @@
 //     }
 // });
 
+//The above is Doug's code.
 
-
+//This script runs whenever the search button is pressed. It sets the current search term into local storage after trimming it
+//Then it refreshes the page. Both the embedded Wikipedia and the Youtube gadgets trigger on page load using the information in local storage
 $(document).ready(() => {
     $("#searchButton").click((event) => {
         let query = $('#searchBar').val();
@@ -81,6 +83,5 @@ $(document).ready(() => {
         localStorage.setItem('searchTerm',query);
         console.log(localStorage.getItem('searchTerm'));
         location.reload();
-
     });
 });

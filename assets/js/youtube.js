@@ -1,5 +1,5 @@
-url = 'https://www.youtube.com/watch?v=1Kxok90jJ6c&ab_channel=ConjuredBiscuit'
-urlID = 'abRPaXgJGQg'
+urlID = localStorage.getItem('video')
+
 
 
 
