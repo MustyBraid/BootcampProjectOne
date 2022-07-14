@@ -22,7 +22,11 @@ function getApi() {
         // Creating elements, tablerow, tabledata, and anchor
         var createTableRow = document.createElement('tr');
         var tableData = document.createElement('td');
-        var link = document.createElement('a');
+        var link = document.createElement('button');
+        //Create buttons for each youtube video, using the button's class to store the video ID
+        link.setAttribute("class", data[i].id.videoId);
+        link.setAttribute("id",'button' + i);
+        link.addEventListener('click', storeVid);
 
         // Setting the text of link and the href of the link
         link.textContent = data[i].snippet.title;
@@ -37,5 +41,11 @@ function getApi() {
     });
 }
 
+//storeVid stores the video ID into local storage and refreshes the page. On refresh, the embedded player loads the video automatically
+function storeVid (event) {
+  localStorage.setItem('video', this.className);
+  console.log(localStorage.getItem('video'));
+  location.reload();
+}
 //fetchButton.addEventListener('click', getApi);
 getApi();
