@@ -67,3 +67,20 @@
 //         $
 //     }
 // });
+
+
+
+$(document).ready(() => {
+    $("#searchButton").click((event) => {
+        let query = $('#searchBar').val();
+        if (query === ''){
+            console.log('null search query')
+            return;
+        }
+        query = query.trim();
+        localStorage.setItem('searchTerm',query);
+        console.log(localStorage.getItem('searchTerm'));
+        location.reload();
+
+    });
+});

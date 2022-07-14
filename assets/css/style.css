@@ -2,7 +2,7 @@
     background-color: black;
 }
 
-p, li {
+p, li, h2 {
     color: rgba(255, 255, 255, 0.7);
 }
 #formatInput {
@@ -54,7 +54,7 @@ main {
     border-width: 3px;
     height: 85vh;
     margin: 10px;
-    width: 40vw;
+    width: 50vw;
 }
 
 .card > * {
@@ -62,15 +62,12 @@ main {
     padding: 20px;
 }
 
-#misc {
-    width: 20vw;
-}
 
 .card > img {
-    width: 25vw;
+    width: 35vw;
 }
 
-.card > p, .card > a {
+.card > h2, .card > a {
     text-align: center;
 }
 .card > ul {

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Plain Doughnut</title>
+    <title>Plain Donuts' Youpedia</title>
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -12,18 +12,6 @@
 
 <header>
     <input type="text" id="searchBar" placeholder="Search"/>
-    <select id="formatInput">
-        <option value="" disabled selected>Select a format...</option>
-        <!-- TODO: These values are placeholders, will update later -->
-        <option value="maps">Maps</option>
-        <option value="audio">Audio</option>
-        <option value="photos">Photos</option>
-        <option value="manuscripts">Manuscripts</option>
-        <option value="newspapers">Newspapers</option>
-        <option value="film-and-videos">Film and Videos</option>
-        <option value="notated-music">Notated Music</option>
-        <option value="websites">Websites</option>
-    </select>
     <button id="searchButton" type="button">Search</button>
     <nav>
         <a href="https://github.com/MustyBraid/BootcampProjectOne">Github Project Link</a>
@@ -33,33 +21,24 @@
 <body>
     <main>
         <section class="card" id="wikipedia">
-            <p>This is a Wikipedia title, probably!</p>
+            <h2>Wikipedia results</h2>
             <iframe id="wikiEmbed"
                 title="Embedded wikipedia"
-                width="480"
-                height="400"
+                width="640"
+                height="500"
                 src="">
             </iframe>
-            <!-- Not even sure this <a> element is necessary. I suspect it isn't -->
-            <a href="" id="wikipediaLink">This could be a Wikipedia link</a>
         </section>
         
-        <section class="card" id="misc">
-            <ul>
-                <li id="title">A button or some info</li>
-                <li id="length">This element will compare the lengths of our 2 searches</li>
-                <li id="popularity">This element will compare relative popularity of our 2 searches. Total Youtube views and monthly Wikipedia hits (https://wikitech.wikimedia.org/wiki/Analytics/AQS/Pageviews)</li>
-            </ul>
-            </section>
-
         <section class="card" id="youtube">
-            <p>This is a Youtube title, probably!</p>
+            <h2>Youtube results</h2>
+            <section id="repo-table"></section>
             <div id ='youtubePlayer'></div>
-            <p id="youtubeDetails">The video is this long and has been viewed this many times</p>
             </section>
     </main>
 
 <script src="./assets/js/script.js"></script>
 <script src="./assets/js/youtube.js"></script>
 <script src="./assets/js/wiki.js"></script>
+<script src="./assets/js/youtube2.js"></script>
 </body>
