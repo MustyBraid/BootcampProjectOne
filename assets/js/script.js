@@ -80,8 +80,10 @@ $(document).ready(() => {
             return;
         }
         query = query.trim();
+        //Store the processed search term
         localStorage.setItem('searchTerm',query);
         console.log(localStorage.getItem('searchTerm'));
+        //refresh the page
         location.reload();
     });
 });
