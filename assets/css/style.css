@@ -2,6 +2,15 @@
     background-color: black;
 }
 
+@media only screen and (min-width: 1000px) {
+    main {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        gap: 10px;
+    }
+}
+
 p, li, h2 {
     color: rgba(255, 255, 255, 0.7);
 }
@@ -45,6 +54,14 @@ main {
     align-items: center;
     gap: 10px;
 }
+@media only screen and (max-width: 1000px) {
+    main {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        gap: 10px;
+    }
+}
 
 .card {
     border-style: solid;
@@ -55,6 +72,19 @@ main {
     height: 85vh;
     margin: 10px;
     width: 50vw;
+}
+
+@media only screen and (max-width: 1000px) {
+    .card {
+        border-style: solid;
+        border-color: rgba(0, 0, 264, 0.4);
+        border-radius: 20px;
+        padding: 10px;
+        border-width: 3px;
+        height: 85vh;
+        margin: 10px;
+        width: 100vw;
+    }
 }
 
 .card > * {
